@@ -4,22 +4,23 @@
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!--<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>-->
-<%--
 <%@ taglib prefix="joda" uri="http://www.joda.org/joda/time/tags"%>
---%>
+
+<s:message code="label_letter_list" var="labelLetterList"/>
 
 <html>
 <head>
     <title></title>
 </head>
 <body>
+<h1>${labelLetterList}</h1>
 <div>
     <table>
 
         <c:forEach var="letter" items="${letters}">
             <tr>
                 <td>
-                    <a href="${letter.id}"><joda:format value="${letter.date}" pattern="dd-MM-yyyy "/></a>
+                    <a href="${letter.id}">${letter.date}/></a>
                 </td>
                 <td>
                     ${letter.subject}
