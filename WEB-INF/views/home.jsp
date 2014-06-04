@@ -31,11 +31,10 @@
 
     </table>
 </div>
-<%--
 
 <div>
     <h2>Create a new Letter </h2>
-    <sf:form method="POST" modelAttribute="letter" action="home.jsp">
+    <sf:form method="POST" modelAttribute="newLetter" action="home.jsp">
         <fieldset>
             <table cellspacing="0">
                 <tr>
@@ -74,7 +73,6 @@
         </fieldset>
     </sf:form>
 </div>
---%>
 
 </body>
 </html>
