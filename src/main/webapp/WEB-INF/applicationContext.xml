@@ -20,7 +20,7 @@
     </bean>
 
 
-    <mvc:resources mapping="/resources/**" location="classpath:/resources"/>
+    <mvc:resources location="/, classpath:/META-INF/web-resources/" mapping="/resources/**"/>
 
     <mvc:annotation-driven/>
 
